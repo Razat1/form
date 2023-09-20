@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.form.MainController">
+  <tabs>
+    <Tab text="Login">
+      <content>
+        <AnchorPane fx:id="loginPane" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="login" layoutX="267.0" layoutY="281.0" mnemonicParsing="false" onAction="#loginbtn" text="Login" />
+                  <Button fx:id="cancel" layoutX="125.0" layoutY="281.0" mnemonicParsing="false" onAction="#cancelbtn" text="Cancel" />
+                  <Button fx:id="clear" layoutX="404.0" layoutY="281.0" mnemonicParsing="false" onAction="#clearbtn" text="Clear" />
+                  <TextField fx:id="userField" layoutX="226.0" layoutY="76.0" />
+                  <PasswordField fx:id="pwdField" layoutX="226.0" layoutY="125.0" />
+                  <Label fx:id="name" layoutX="125.0" layoutY="80.0" text="Username" />
+                  <Label fx:id="pwd" layoutX="125.0" layoutY="129.0" text="Password" />
+                  <CheckBox fx:id="chkRem" layoutX="254.0" layoutY="192.0" mnemonicParsing="false" text="Remember Details" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab text="Untitled Tab 2">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>
